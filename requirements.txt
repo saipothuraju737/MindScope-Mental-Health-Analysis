@@ -1,0 +1,32 @@
+# Core packages
+streamlit
+numpy
+
+# NLP and Deep Learning
+torch
+transformers
+datasets
+accelerate
+# Data processing
+pandas
+scikit-learn
+
+# Miscellaneous
+numpy
+matplotlib
+
+nltk
+imblearn
+
+spacy
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.6.0/en_core_web_sm-3.6.0.tar.gz
+
+
+torchtext
+xgboost
+lightgbm
+catboost
+tensorflow
+
+flask
+joblib

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" role="img" aria-label="Illustration of a brain connected to tweets and insights">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1" stop-opacity=".25"/><stop offset="1" stop-color="#14b8a6" stop-opacity=".25"/></linearGradient>
+<linearGradient id="br" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#818cf8"/><stop offset="1" stop-color="#2dd4bf"/></linearGradient>
+<linearGradient id="br2" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#4338ca" flood-opacity=".25"/></filter>
+</defs>
+<circle cx="320" cy="285" r="240" fill="url(#bg)"/>
+<circle cx="320" cy="285" r="185" fill="none" stroke="#818cf8" stroke-opacity=".35" stroke-dasharray="4 10" stroke-width="2"/>
+<circle cx="320" cy="285" r="130" fill="#fff" fill-opacity=".08"/>
+<!-- brain -->
+<g filter="url(#sh)">
+<path d="M316 170c-52-24-112 8-108 66-40 22-40 84 4 106-6 54 56 84 104 56z" fill="url(#br)"/>
+<path d="M324 170c52-24 112 8 108 66 40 22 40 84-4 106 6 54-56 84-104 56z" fill="url(#br2)"/>
+</g>
+<g fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M316 170v228"/>
+<path d="M300 215c-30-6-52 10-54 34M296 270c-28-4-44 12-44 34M300 330c-26 0-40 14-40 30M284 190c-8 14-6 28 6 40"/>
+<path d="M340 215c30-6 52 10 54 34M344 270c28-4 44 12 44 34M340 330c26 0 40 14 40 30M356 190c8 14 6 28-6 40"/>
+</g>
+<!-- neural nodes -->
+<g fill="#fff"><circle cx="246" cy="249" r="7"/><circle cx="252" cy="304" r="7"/><circle cx="394" cy="249" r="7"/><circle cx="388" cy="304" r="7"/><circle cx="260" cy="360" r="6"/><circle cx="380" cy="360" r="6"/></g>
+<!-- tweet bubble top-left -->
+<g transform="translate(40 80)">
+<rect width="210" height="96" rx="22" fill="#fff" filter="url(#sh)"/>
+<path d="M150 94l14 26 6-26z" fill="#fff"/>
+<circle cx="34" cy="34" r="16" fill="#c7d2fe"/><rect x="60" y="22" width="90" height="9" rx="4.5" fill="#6366f1"/><rect x="60" y="40" width="130" height="8" rx="4" fill="#cbd5e1"/>
+<rect x="24" y="66" width="150" height="8" rx="4" fill="#e2e8f0"/>
+</g>
+<!-- result chip right -->
+<g transform="translate(420 66)">
+<rect width="190" height="74" rx="20" fill="#fff" filter="url(#sh)"/>
+<circle cx="38" cy="37" r="20" fill="#10b981"/><path d="M29 38l7 7 13-14" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="70" y="24" width="80" height="9" rx="4.5" fill="#0f766e"/><rect x="70" y="42" width="56" height="8" rx="4" fill="#cbd5e1"/>
+</g>
+<!-- chart card bottom-right -->
+<g transform="translate(432 400)">
+<rect width="180" height="112" rx="22" fill="#fff" filter="url(#sh)"/>
+<rect x="24" y="58" width="22" height="38" rx="6" fill="#a5b4fc"/><rect x="58" y="36" width="22" height="60" rx="6" fill="#6366f1"/><rect x="92" y="50" width="22" height="46" rx="6" fill="#5eead4"/><rect x="126" y="24" width="22" height="72" rx="6" fill="#14b8a6"/>
+</g>
+<!-- heart bottom-left -->
+<g transform="translate(60 410)">
+<rect width="150" height="96" rx="22" fill="#fff" filter="url(#sh)"/>
+<path d="M75 70C42 50 48 24 64 26c6 1 11 5 11 10 0-5 5-9 11-10 16-2 22 24-11 44z" fill="#fb7185"/>
+<path d="M22 58h26l8-14 10 26 8-12h18" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0"/>
+</g>
+<!-- connectors -->
+<g fill="none" stroke="#6366f1" stroke-opacity=".5" stroke-width="2.5" stroke-dasharray="3 8" stroke-linecap="round">
+<path d="M200 178C230 200 240 215 250 235"/><path d="M420 120C410 160 400 195 392 232"/><path d="M425 440C410 410 400 380 388 355"/><path d="M180 420C210 400 235 385 258 366"/>
+</g>
+<g fill="#f59e0b"><path d="M590 230l6 14 14 6-14 6-6 14-6-14-14-6 14-6z"/><path d="M40 300l4 9 9 4-9 4-4 9-4-9-9-4 9-4z" fill="#ec4899"/></g>
+</svg>

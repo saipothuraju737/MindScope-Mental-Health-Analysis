@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help & resources | MindScope</title>
+  <meta name="description" content="Educational information about MindScope mental-health text analysis.">
+  <link rel="icon" href="{{ url_for('static', filename='images/favicon.svg') }}" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script>try { var t=localStorage.getItem('mh-theme'); if(t) document.documentElement.setAttribute('data-theme',t); } catch(e) {}</script>
+</head><body>
+<header class="nav"><div class="container nav-inner">
+  <a href="{{ url_for('index') }}" class="brand"><img src="{{ url_for('static', filename='images/logo.svg') }}" alt="" width="36" height="36"><span>MindScope</span></a>
+  <nav class="nav-links"><a href="{{ url_for('index') }}">Analyze</a><a class="active" href="{{ url_for('resources') }}">Help & resources</a><a href="{{ url_for('about') }}">About</a></nav>
+  <div class="nav-actions"><button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode"><svg class="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button></div>
+</div></header>
+<main>
+<section class="section"><div class="container"><div class="section-head"><h1>Help &amp; resources</h1><p>If you or someone you know is struggling, talking to someone can really help.</p></div>
+<div class="card support"><img src="{{ url_for('static', filename='images/support.svg') }}" alt="People supporting one another"><div><h2>You're not alone</h2><p>If you are in immediate danger, contact your local emergency number right away.</p><p><strong>India:</strong> Tele-MANAS <a href="tel:14416">14416</a> or <a href="tel:18008914416">1800-891-4416</a> (24/7, free).</p><p><strong>Worldwide:</strong> <a href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com</a> lists free helplines by country.</p><p><strong>Someone you trust:</strong> a friend, family member, teacher or doctor.</p></div></div></div></section>
+<section class="section alt"><div class="container"><div class="section-head"><h2>About each category</h2><p>General information and gentle first steps. These are not medical advice.</p></div><div class="cond-grid">
+{% for c in conditions %}<article class="card cond-card" style="--accent:{{ c.color }};cursor:default"><img src="{{ url_for('static', filename='images/' ~ c.slug ~ '.svg') }}" alt="" width="56" height="56"><h3>{{ c.name }}</h3><p>{{ c.desc }}</p><ul>{% for tip in c.tips %}<li>{{ tip }}</li>{% endfor %}</ul></article>{% endfor %}
+</div></div></section>
+<section class="section"><div class="container narrow"><div class="section-head"><h2>Everyday habits that may help</h2></div><div class="steps"><div class="card step"><h3>Sleep</h3><p>Keep a steady bedtime and wake time, and put screens away before bed.</p></div><div class="card step"><h3>Move</h3><p>Even a 10-minute walk can lift mood and lower tension.</p></div><div class="card step"><h3>Connect</h3><p>Send one message to someone you trust. Small check-ins add up.</p></div></div></div></section>
+</main><footer class="footer"><div class="container footer-inner"><div class="brand"><img src="{{ url_for('static', filename='images/logo.svg') }}" alt="" width="30" height="30"><span>MindScope</span></div><p>For education and research only. Not a medical or diagnostic tool.</p><p><a href="{{ url_for('resources') }}">Need support? See help &amp; resources</a></p></div></footer>
+<script>
+(function(){const b=document.getElementById('themeToggle');const root=document.documentElement;b.addEventListener('click',()=>{const next=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',next);try{localStorage.setItem('mh-theme',next)}catch(e){}})})();
+</script></body></html>
